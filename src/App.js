@@ -10,7 +10,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("authToken"));
   
   async function handleLogin(username, password) {
-    const response = await fetch('http://bubble9.zenati.butmmi.o2switch.site/connexion.php', {
+    const response = await fetch('http://bubble9.zenati.butmmi.o2switch.site/api/connexion.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
