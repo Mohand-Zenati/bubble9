@@ -6,7 +6,7 @@ function Api() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://bubble9.zenati.butmmi.o2switch.site/api.php')
+    fetch('https://bubble9.zenati.butmmi.o2switch.site/api.php')
       .then(response => response.json())
       .then(jsonData => setData(jsonData))
       .catch(error => console.error(error));

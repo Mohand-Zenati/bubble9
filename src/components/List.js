@@ -12,7 +12,7 @@ function List() {
   }
 
   useEffect(() => {
-    fetch("http://bubble9.zenati.butmmi.o2switch.site/api/lire.php")
+    fetch("https://bubble9.zenati.butmmi.o2switch.site/api/lire.php")
     .then(response => response.json())
     .then(data => setTickets(data.billets))
 

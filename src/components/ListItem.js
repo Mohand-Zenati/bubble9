@@ -11,7 +11,7 @@ function ListItem({id, nom, prenom, datee, horaire,  place, prix, handleDelete})
   useEffect(() => {
 
    
-    fetch("http://bubble9.zenati.butmmi.o2switch.site/api/lire.php")
+    fetch("https://bubble9.zenati.butmmi.o2switch.site/api/lire.php")
       .then(response => response.json())
       .then(data => setTickets(data.billets))
   }, []) // ajout de "refresh" ici
@@ -21,7 +21,7 @@ function ListItem({id, nom, prenom, datee, horaire,  place, prix, handleDelete})
  
 
 function handleClick() {
-  fetch(`http://bubble9.zenati.butmmi.o2switch.site/api/supprimer.php?id=${id}`, { method: 'DELETE' })
+  fetch(`https://bubble9.zenati.butmmi.o2switch.site/api/supprimer.php?id=${id}`, { method: 'DELETE' })
     .then(() => {
     
     
