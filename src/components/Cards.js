@@ -14,7 +14,7 @@ function Cards() {
       const json1 = await response1.json();
 
 
-      const response2 = await fetch('https://bubble9.zenati.butmmi.o2switch.site/reservation_total.php');
+      const response2 = await fetch('https://bubble9.zenati.butmmi.o2switch.site/api/reservation_total.php');
       const json2 = await response2.json();   
       
       const response3 = await fetch('https://bubble9.zenati.butmmi.o2switch.site/api/total.php');
