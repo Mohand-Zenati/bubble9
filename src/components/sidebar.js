@@ -28,7 +28,7 @@ function Sidebar() {
             <i className='fas fa-home'></i>
           </button>
 
-          <button onClick={() => logout()}>
+          <button className='btn-lougout'onClick={() => logout()}>
           Logout
         </button>
         </li>
