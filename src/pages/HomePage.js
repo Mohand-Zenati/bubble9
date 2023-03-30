@@ -5,6 +5,12 @@ import Sidebar from '../components/sidebar'
 import './homepage.css'
 
 function HomePage() {
+
+  const logout = () => {
+    localStorage.removeItem('authToken');
+    window.location = "/";
+  }
+
   return (
     <>
 
@@ -16,6 +22,9 @@ function HomePage() {
           <i class='fas fa-home'></i>
           <span>Statistique</span>
         </h1>
+        <button onClick={() => logout()}>
+          Logout
+        </button>
         <Cards />
         <List />
       </div>
