@@ -54,7 +54,7 @@ function List() {
                   horaire={item.horaire}
                   place={item.place}
                   prix={item.prix}
-                  handleDelete={() => handleDelete(item.id)}
+                  onDelete={() => handleDelete(item.id)}
                 />
               ))
             }
