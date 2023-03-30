@@ -29,7 +29,7 @@ function Sidebar() {
           </button>
 
           <button className='btn-lougout'onClick={() => logout()}>
-          Logout
+          Déconnexion
         </button>
         </li>
        
