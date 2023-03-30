@@ -17,7 +17,7 @@ function Cards() {
       const response2 = await fetch('https://bubble9.zenati.butmmi.o2switch.site/api/reservation_total.php');
       const json2 = await response2.json();   
       
-      const response3 = await fetch('https://bubble9.zenati.butmmi.o2switch.site/api/total.php');
+      const response3 = await fetch('https://bubble9.zenati.butmmi.o2switch.site/api/somme.php');
       const json3 = await response3.json();
 
       setStat([{title: "Visite", total: json1}, {title: "Réservation", total: json2}, {title: "Revenu", total: json3 + "\u20AC"}]);
