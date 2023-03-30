@@ -7,7 +7,12 @@
     width: 260px;
     background-color: #363447;
     box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.25);
-  }
+}
+
+.sidebar-nav button {
+    color:white;
+    
+}
   
  
   .sidebar-options {
