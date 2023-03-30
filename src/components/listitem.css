@@ -1,0 +1,25 @@
+.table-container {
+    border-collapse: collapse;
+    width: 80%;
+  
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #363447;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    width: 300px;
+  }
+  
+  th {
+    background-color: #363447;
+    font-weight: bold;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #363447;
+  }
+  

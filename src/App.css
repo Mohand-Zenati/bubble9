@@ -1,0 +1,317 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+
+
+.tour-overlay{
+  background: #666;
+  opacity: 0.5;
+  z-index: 9996;
+  min-height: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.tour-stop{
+  position: relative;
+  z-index: 9998;
+  outline: 10px solid white;
+}
+
+.tour-stop-bg{
+  background: white;
+  position: fixed;
+  z-index: 9997;
+}
+
+.tour-message{
+  position: fixed;
+  z-index: 9997;
+  top: 0;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: #422d2966 0px 7px 29px 0px;
+}
+
+.tour-message .title{
+  font-size: 1.75em;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.tour-message__controls{
+  font-size: 1.5em;
+}
+
+/* 
+
+ Inconsequential Styles
+
+*/
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  
+}
+.row {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+}
+.col {
+  flex: 1 1 0;
+}
+
+
+button {
+  width: 50px;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  color: inherit;
+}
+
+
+
+.icon {
+  padding: 20px;
+}
+
+.h1 {
+  font-size: 2em;
+  margin: 0;
+  color: white;
+}
+
+/* 
+
+ App
+
+*/
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h3 {
+  margin-left: 20px;  
+  font-size: 1.5rem;
+  color: white;
+}
+.header {
+  background: #fff;
+  flex: 0 0 40px;
+  box-shadow: #422d2966 0px 7px 29px 0px;
+}
+
+.logo {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #dd5c40;
+  display: inline-block;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  color: #b7b7b7;
+}
+
+
+
+.user-profile {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+/* 
+
+ Body
+
+*/
+
+.body {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+/* 
+
+ Sidebar
+
+*/
+.sidebar {
+  flex: 0 0 20%;
+  background-color: transparent;
+  box-shadow: #422d2966 0px 7px 29px 0px;
+}
+
+.sidebar-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar-nav button {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+
+.sidebar-nav button span {
+  flex: 1 1 0;
+  padding: 20px;
+  color: #FF6B3C;
+  
+ 
+}
+
+.sidebar-nav button .active {
+
+  
+  background-color: #f3674a;
+  border-radius: 0 20px;
+  color: white;
+}
+
+
+
+.sidebar-nav button i {
+  flex: 0 0 20px;
+}
+
+.sidebar-nav .cta {
+  padding: 10px 20px;
+}
+
+button.primary {
+  display: block;
+  padding: 20px;
+  background: #de5c41;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+button.primary:hover {
+  color: white;
+  background: #f3674a;
+}
+
+/* 
+
+ Main View
+
+*/
+
+.main {
+  flex: 0 0 80%;
+  background-color: #161616;;
+}
+
+.main__content {
+  padding: 40px;
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+.card {
+  background-color: transparent;
+  box-shadow: #422d2966 0px 7px 29px 0px;
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+.card__subtitle {
+  margin: 1em 0 1em 0;
+  letter-spacing: 1px;
+  color: #FF6B3C;
+  text-transform: uppercase;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.card__extra {
+  margin: 0;
+}
+
+h2 {
+  color: white;
+}
+
+.table-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: #422d2966 0px 7px 29px 0px;
+}
+
+.dashcards {
+  margin-bottom: 40px;
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.dashcards .col {
+  padding: 0 10px;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+
+
+.table td {
+  padding: 20px 0;
+   
+}
+
+
+.table thead td {
+  
+  border-bottom: 0.01px solid #161B21;
+  color: #FF6B3C;
+}
+
+.table tbody td {
+  border-bottom: 0.5px solid #161B21;
+  color: #DDE1E8;
+  
+}
+
