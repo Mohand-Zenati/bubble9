@@ -7,9 +7,14 @@ import { RiDashboardFill } from "react-icons/ri";
 
 function Sidebar() {
   const [activeButton, setActiveButton] = useState('Accueil');
+  
 
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);
+  }
+    const logout = () => {
+    localStorage.removeItem('authToken');
+    window.location = "/";
   }
 
   return (
@@ -22,6 +27,10 @@ function Sidebar() {
             <span className={activeButton === 'Accueil' ? 'active'  : ''}>Dashboard</span>
             <i className='fas fa-home'></i>
           </button>
+
+          <button onClick={() => logout()}>
+          Logout
+        </button>
         </li>
        
       </ul>

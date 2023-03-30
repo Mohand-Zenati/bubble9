@@ -10,14 +10,14 @@ function Cards() {
     
     const fetchData = async () => {
       
-      const response1 = await fetch('http://localhost/billeteriee/api/visite_total.php');
+      const response1 = await fetch('http://bubble9.zenati.butmmi.o2switch.site/visite_total.php');
       const json1 = await response1.json();
 
 
-      const response2 = await fetch('http://localhost/billeteriee/api/reservation_total.php');
+      const response2 = await fetch('http://bubble9.zenati.butmmi.o2switch.site/reservation_total.php');
       const json2 = await response2.json();   
       
-      const response3 = await fetch('http://localhost/billeteriee/api/somme.php');
+      const response3 = await fetch('http://bubble9.zenati.butmmi.o2switch.site/somme.php');
       const json3 = await response3.json();
 
       setStat([{title: "Visite", total: json1}, {title: "Réservation", total: json2}, {title: "Revenu", total: json3 + "\u20AC"}]);
