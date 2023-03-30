@@ -5,19 +5,18 @@ import ListItem from './ListItem';
 function List() {
   let [tickets, setTickets] = useState(null)
 
-
-  
-  function handleDelete() {
-
-  }
-
   useEffect(() => {
     fetch("https://bubble9.zenati.butmmi.o2switch.site/api/lire.php")
-    .then(response => response.json())
-    .then(data => setTickets(data.billets))
+      .then(response => response.json())
+      .then(data => setTickets(data.billets))
+  }, [])
 
-  
-  },[])
+  function refreshTickets() {
+    fetch("https://bubble9.zenati.butmmi.o2switch.site/api/lire.php")
+      .then(response => response.json())
+      .then(data => setTickets(data.billets))
+  }
+
 
   return (
   <div> 

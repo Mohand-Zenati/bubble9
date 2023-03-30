@@ -4,28 +4,16 @@ import { FaTrash } from "react-icons/fa";
 
 
 
-function ListItem({id, nom, prenom, datee, horaire,  place, prix, handleDelete}) {
-  let [tickets, setTickets] = useState(null)
-
-
-  useEffect(() => {
-    fetch("https://bubble9.zenati.butmmi.o2switch.site/api/lire.php")
-      .then(response => response.json())
-      .then(data => setTickets(data.billets))
-  }, []) // ajout de "refresh" ici
-  
- 
-function handleClick() {
-  fetch(`https://bubble9.zenati.butmmi.o2switch.site/api/supprimer.php?id=${id}`, { method: 'DELETE' })
-    .then(() => {
-    
-    
-    })
-    .catch((error) => {
-      console.error('Failed to delete element:', error);
-    });
-}
-
+function ListItem({id, nom, prenom, datee, horaire,  place, prix, handleDelete}) {  
+  function handleClick() {
+    fetch(`https://bubble9.zenati.butmmi.o2switch.site/api/supprimer.php?id=${id}`, { method: 'DELETE' })
+      .then(() => {
+        handleDelete();
+      })
+      .catch((error) => {
+        console.error('Failed to delete element:', error);
+      });
+  }
 
   return (
 
