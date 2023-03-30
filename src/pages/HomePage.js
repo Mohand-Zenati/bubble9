@@ -22,9 +22,7 @@ function HomePage() {
           <i class='fas fa-home'></i>
           <span>Statistique</span>
         </h1>
-        <button onClick={() => logout()}>
-          Logout
-        </button>
+    
         <Cards />
         <List />
       </div>
